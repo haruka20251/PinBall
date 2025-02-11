@@ -57,8 +57,8 @@ public class CloudController : MonoBehaviour
   　　　　　スケール値が1より大きい場合、オブジェクトは拡大されます。
   　　　　　スケール値が1より小さい場合、オブジェクトは縮小されます。
   　　　　　スケール値に0を指定すると、オブジェクトはその軸方向のサイズが0になり、見えなくなります。
-  　　　　　スケール値に負の値を指定すると、オブジェクトは反転します。
-      　　 */
-        this.transform.localScale = new Vector3(this.minimum + Mathf.Sin(Time.time * this.magSpeed) * this.magnification, this.transform.localScale.y, this.minimum + Mathf.Sin(Time.time * this.magSpeed) * this.magnification);
-　　}
+            スケール値に負の値を指定すると、オブジェクトは反転します。
+           */
+      this.transform.localScale = new Vector3(this.minimum + Mathf.Sin(Time.time * this.magSpeed) * this.magnification, this.transform.localScale.y, this.minimum + Mathf.Sin(Time.time * this.magSpeed) * this.magnification);
+    }
 }
